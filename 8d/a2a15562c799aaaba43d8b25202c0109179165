@@ -1,0 +1,25 @@
+.github/workflows/slides.yml
+  s_5fff262d5841fa::t_ee790f57612d89 35-38
+slides/public/qr-slides.svg
+  s_5fff262d5841fa::t_9fa773d12a49d7 1
+slides/theme/styles/components.css
+  s_5fff262d5841fa::t_9fa773d12a49d7 432-454
+slides/slides.md
+  s_5fff262d5841fa::t_9fa773d12a49d7 2098-2102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8da2a15562c799aaaba43d8b25202c0109179165",
+  "prompts": {},
+  "sessions": {
+    "s_5fff262d5841fa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4ba16e91-7717-464b-a793-dd7a0956ceb0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": null
+    }
+  }
+}
