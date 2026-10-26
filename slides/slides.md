@@ -11,7 +11,7 @@ fonts:
   provider: none
 transition: none
 mdc: true
-download: true
+download: https://ythirion.github.io/journee-econception2027/green-craft-journee-econception-2027.pdf
 exportFilename: green-craft-journee-econception-2027
 layout: cover
 eyebrow: Journée de l'écoconception numérique 2027
@@ -2095,9 +2095,9 @@ layout: statement
 
 Merci ! Des questions ?
 
-<a class="slides-qr" href="https://ythirion.github.io/journee-econception2027/">
-  <img src="/qr-slides.svg" alt="QR code vers les slides en ligne" width="150" height="150" />
-  <span>ythirion.github.io/journee-econception2027</span>
+<a class="slides-qr" href="https://ythirion.github.io/journee-econception2027/green-craft-journee-econception-2027.pdf">
+  <img src="/qr-slides.svg" alt="QR code pour télécharger les slides en PDF" width="150" height="150" />
+  <span>ythirion.github.io/journee-econception2027/green-craft-journee-econception-2027.pdf</span>
 </a>
 
 <!--

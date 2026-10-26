@@ -37,6 +37,12 @@ npm run build   # build statique dans dist/
 npm run export  # export en PDF
 ```
 
+Le PDF proposé au téléchargement sur la version en ligne est généré en local, puis commité, pour garder un build rapide. À relancer après chaque modification des slides :
+
+```bash
+npx slidev export --output public/green-craft-journee-econception-2027.pdf
+```
+
 ## Licence
 Ce contenu est mis à disposition selon les termes de la licence [Creative Commons Attribution - Partage dans les mêmes conditions 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) : tu peux le réutiliser et l'adapter, y compris à des fins commerciales, en citant l'auteur et en partageant tes adaptations sous la même licence. Texte complet dans [LICENSE](LICENSE).
 
