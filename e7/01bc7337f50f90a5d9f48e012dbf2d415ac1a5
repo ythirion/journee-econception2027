@@ -1,0 +1,37 @@
+slides/public/qr-checklist.svg
+  s_5fff262d5841fa::t_4ca602ab9f1524 1
+slides/theme/styles/components.css
+  s_5fff262d5841fa::t_130fce2c629355 887,893-895
+  s_5fff262d5841fa::t_ec3726a48c42b1 900
+  s_5fff262d5841fa::t_4ca602ab9f1524 885-886,888,890-892,896-898,903,905-906
+  s_5fff262d5841fa::t_a591a033914b74 1769-1773
+  s_5fff262d5841fa::t_9417291b4d9066 889,899,901-902,904
+slides/slides.md
+  s_5fff262d5841fa::t_a591a033914b74 139,1911,1922
+  s_5fff262d5841fa::t_130fce2c629355 2003
+  s_5fff262d5841fa::t_9417291b4d9066 2050
+  s_5fff262d5841fa::t_d9f6336c751042 1910
+  s_5fff262d5841fa::t_4ca602ab9f1524 2002,2004-2005
+  s_5fff262d5841fa::t_7b1dcb22d657d3 14-15,2051
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e701bc7337f50f90a5d9f48e012dbf2d415ac1a5",
+  "prompts": {},
+  "humans": {
+    "h_0a88d9aba8622a": {
+      "author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_5fff262d5841fa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4ba16e91-7717-464b-a793-dd7a0956ceb0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
