@@ -1,0 +1,57 @@
+.github/workflows/slides.yml
+  s_5fff262d5841fa::t_5030863f38c140 1-63
+LICENSE
+  s_5fff262d5841fa::t_5a457827aedc96 1-428
+PLAN.md
+  s_5fff262d5841fa::t_c1951c876cabbb 1-179
+README.md
+  s_5fff262d5841fa::t_004298a5a51f76 1-43
+slides/package-lock.json
+  s_5fff262d5841fa::t_0d78259e1eac30 1-9532
+slides/package.json
+  s_5fff262d5841fa::t_ab52dd91ef7d49 1-18
+slides/public/cc-by-sa.svg
+  s_5fff262d5841fa::t_f70862d2c1c540 1-199
+slides/scripts/record-ecoindex.mjs
+  s_5fff262d5841fa::t_ae295d9cc31fd5 1-121
+slides/scripts/record-letterflop.mjs
+  s_5fff262d5841fa::t_910fd9e5f7b687 1-54
+slides/slides.md
+  s_5fff262d5841fa::t_def8af2c72e3ce 1-2090
+slides/theme/global-top.vue
+  s_5fff262d5841fa::t_0bf1c1b1766bab 1-23
+slides/theme/layouts/center.vue
+  s_5fff262d5841fa::t_d183691076e518 1-11
+slides/theme/layouts/cover.vue
+  s_5fff262d5841fa::t_a452733755c89d 1-17
+slides/theme/layouts/default.vue
+  s_5fff262d5841fa::t_4f5f521c97747e 1-9
+slides/theme/layouts/section.vue
+  s_5fff262d5841fa::t_91597218fa9567 1-14
+slides/theme/layouts/statement.vue
+  s_5fff262d5841fa::t_3b5909a9dbd9ed 1-12
+slides/theme/package.json
+  s_5fff262d5841fa::t_9badd379d8de79 1-9
+slides/theme/styles/components.css
+  s_5fff262d5841fa::t_9770685675bc43 1-1860
+slides/theme/styles/index.ts
+  s_5fff262d5841fa::t_a06eb05dc69468 1-4
+slides/theme/styles/signal.css
+  s_5fff262d5841fa::t_8903a39b1961f2 1-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3ded981ec7ead59207c4eb75d73767613aba2029",
+  "prompts": {},
+  "sessions": {
+    "s_5fff262d5841fa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4ba16e91-7717-464b-a793-dd7a0956ceb0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Yoan Thirion <yoan.thirion@gmail.com>"
+    }
+  }
+}
