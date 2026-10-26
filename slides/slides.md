@@ -2095,6 +2095,11 @@ layout: statement
 
 Merci ! Des questions ?
 
+<a class="slides-qr" href="https://ythirion.github.io/journee-econception2027/">
+  <img src="/qr-slides.svg" alt="QR code vers les slides en ligne" width="150" height="150" />
+  <span>ythirion.github.io/journee-econception2027</span>
+</a>
+
 <!--
 La punchline. Des logiciels bien conçus et sobres, ça ne se décrète pas, ça se pratique.
 Lundi, deux pratiques. Merci, place aux questions.

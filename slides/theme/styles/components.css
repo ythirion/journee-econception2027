@@ -429,6 +429,29 @@
   max-width: none;
 }
 
+.gc-statement .slides-qr {
+  position: absolute;
+  right: 96px;
+  bottom: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  color: var(--fg);
+  text-decoration: none;
+}
+.gc-statement .slides-qr img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  padding: 6px;
+  background: #fff;
+}
+.gc-statement .slides-qr span {
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
 /*
  * Alternance clair / sombre : le deck est clair, les slides d'annonce
  * (couverture, statement, ouverture de partie) passent en sombre.
