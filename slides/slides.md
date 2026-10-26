@@ -11,6 +11,8 @@ fonts:
   provider: none
 transition: none
 mdc: true
+download: true
+exportFilename: green-craft-journee-econception-2027
 layout: cover
 eyebrow: Journée de l'écoconception numérique 2027
 author: Yoan Thirion
@@ -134,7 +136,7 @@ onSlideLeave(() => {
 <div class="measure">
 
 <figure class="case__video">
-  <video ref="demo" :src="'/ecoindex-demo.webm'" poster="/ecoindex-youtube.webp" controls muted playsinline preload="none" width="1280" height="720" aria-label="Mesure de la page d'accueil de YouTube : les compteurs de poids, de requêtes et d'éléments montent pendant le chargement, note finale F"></video>
+  <video ref="demo" src="/ecoindex-demo.webm" poster="/ecoindex-youtube.webp" controls muted playsinline preload="none" width="1280" height="720" aria-label="Mesure de la page d'accueil de YouTube : les compteurs de poids, de requêtes et d'éléments montent pendant le chargement, note finale F"></video>
 </figure>
 
 <div class="measure__figures">
@@ -1905,6 +1907,8 @@ Le badge EcoIndex du collectif CNumR, en pied de page. Il affiche la note, il es
 
 <p class="lead mt-6" v-click="4">Ce qu'on affiche publiquement, <span class="mark">on s'interdit de le dégrader.</span></p>
 
+<p class="footprint__demo" v-click="5">Démo : <a class="promo__link" href="https://green-craft.fr/empreinte">green-craft.fr/empreinte</a></p>
+
 <div class="source">
   Source : chiffres mesurés sur Letterflop, branches <code>main</code> et <code>rgesn</code>. Atelier « RGESN en action », exercice 14. RGESN 1.5.
 </div>
@@ -1915,6 +1919,7 @@ Le badge renvoie vers une page « Notre empreinte ». Rien de compliqué, trois 
 - Clic 2 : comment on mesure. Pas de greenwashing : une méthode publique, que chacun peut refaire.
 - Clic 3 : nos engagements, c'est-à-dire les seuils de la CI, écrits noir sur blanc.
 - Clic 4 : la transparence engage. Ce qu'on affiche publiquement, on s'interdit de le dégrader.
+- Clic 5 : démo, la page « Notre empreinte » de green-craft.fr. Score réel, ce qui est fait, et ce qu'il reste à faire pour passer en A.
 -->
 
 ---
@@ -1994,6 +1999,10 @@ exportClean: true
 
 # <span class="mark">Ta checklist</span> pour lundi
 
+<a class="checklist__qr" v-if="!$nav.isPrintMode" href="https://green-craft.fr/docs/ta-checklist-pour-lundi.pdf">
+  <img src="/qr-checklist.svg" alt="QR code vers la checklist en PDF" width="104" height="104" />
+</a>
+
 <div class="checklist">
   <div class="checklist__value">
     <h3><span class="value__num">01</span> Des partenariats conscients de leur impact</h3>
@@ -2037,6 +2046,8 @@ exportClean: true
     </ul>
   </div>
 </div>
+
+<p class="checklist__link" v-if="!$nav.isPrintMode"><a href="https://green-craft.fr/docs/ta-checklist-pour-lundi.pdf">green-craft.fr/docs/ta-checklist-pour-lundi.pdf</a></p>
 
 <!--
 La slide à prendre en photo : une checklist par valeur du manifeste, avec les outils vus pendant le talk.
