@@ -1518,6 +1518,10 @@
   font-size: 18px;
   line-height: 1.6;
 }
+ol.promo__facts {
+  margin: 0;
+  list-style: decimal;
+}
 .promo__link {
   display: inline-block;
   padding: 8px 14px;
@@ -1527,6 +1531,87 @@
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+}
+
+/* Hébergement : 3 questions + classement PUE */
+.host {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.host__questions {
+  display: grid;
+  gap: 12px;
+}
+.host .box {
+  padding: 12px 18px;
+}
+.host .box h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+.slidev-layout .host .box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+.host__figure {
+  font-size: 26px;
+  font-weight: 800;
+}
+.slidev-layout p.pue__title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.pue__list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pue__row {
+  display: grid;
+  grid-template-columns: 210px 1fr 48px;
+  gap: 12px;
+  align-items: center;
+  font-size: 17px;
+}
+.pue__name sub {
+  font-size: 12px;
+  vertical-align: baseline;
+  font-weight: 400;
+}
+.pue__track {
+  height: 22px;
+}
+.pue__bar {
+  display: block;
+  height: 100%;
+  background: var(--fg);
+}
+.pue__value {
+  font-family: var(--mono);
+  font-weight: 700;
+  text-align: right;
+}
+.pue__row--avg {
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 2px solid var(--line);
+}
+.pue__row--avg .pue__bar {
+  background: repeating-linear-gradient(135deg, var(--fg) 0 4px, transparent 4px 12px);
+  border: 2px solid var(--fg);
+}
+.slidev-layout p.pue__note {
+  margin: 12px 0 0;
+  font-size: 13px;
 }
 
 /* Rust qu'on réécrit, Python qui explose */

@@ -1598,39 +1598,53 @@ Limites de l'étude : des micro-benchmarks de 2017, des versions de compilateurs
 
 ---
 
-<span class="kicker">Deux trajectoires / un même choix</span>
+<span class="kicker">Infrastructure / le poste invisible</span>
 
-# Rust et Python <span class="mark">qui explosent</span>
+# L'hébergement en <span class="mark">3 questions</span>
 
-<div class="rp mt-8">
-  <div class="rp__col" v-click="1">
-    <h3>Rust : <span class="mark">sobre</span>, choisi pour les logiciels très utilisés</h3>
-    <div class="rp__stat"><span class="figure">÷3</span><p><strong>de ressources</strong> pour le même service chez Cloudflare, qui fait transiter une grande partie du web.</p></div>
+<div class="host mt-6">
+  <div class="host__questions">
+    <div class="box" v-click="1">
+      <h3>1. Quelle efficacité ?</h3>
+      <p>Le <strong>PUE</strong> : l'énergie du datacenter divisée par celle des serveurs. 1,0 : rien de perdu.</p>
+    </div>
+    <div class="box" v-click="3">
+      <h3>2. Quelle électricité ? <span class="host__figure">×40</span></h3>
+      <p>Entre charbon et hydraulique. Vraiment consommée, ou de simples <strong>certificats</strong> ?</p>
+    </div>
+    <div class="box box--accent" v-click="4">
+      <h3>3. Quel pays ? <span class="host__figure">÷5 à 7</span></h3>
+      <p>D'intensité carbone en hébergeant à <strong>Paris</strong> plutôt qu'en Virginie.</p>
+    </div>
   </div>
-  <div class="rp__col" v-click="2">
-    <h3>Python : <span class="mark">gourmand</span>, et le plus utilisé au monde</h3>
-    <div class="rp__stat"><span class="figure">6 sur 10</span><p><strong>développeur·ses l'utilisent</strong>, porté par l'essor de l'IA.</p></div>
-    <div class="rp__stat"><span class="figure">×76</span><p><strong>d'énergie</strong> par rapport au C, pour faire la même chose.</p></div>
+  <div class="pue" v-click="2">
+    <p class="pue__title">PUE moyen déclaré, du plus sobre au moins sobre</p>
+    <ul class="pue__list" role="list">
+    <li class="pue__row"><span class="pue__name">Google Cloud</span><span class="pue__track"><span class="pue__bar" style="width:15.0%"></span></span><span class="pue__value">1,09</span></li>
+    <li class="pue__row"><span class="pue__name">Infomaniak <sub>site D4</sub></span><span class="pue__track"><span class="pue__bar" style="width:15.0%"></span></span><span class="pue__value">1,09</span></li>
+    <li class="pue__row"><span class="pue__name">Hetzner</span><span class="pue__track"><span class="pue__bar" style="width:20.0%"></span></span><span class="pue__value">1,12</span></li>
+    <li class="pue__row"><span class="pue__name">AWS</span><span class="pue__track"><span class="pue__bar" style="width:25.0%"></span></span><span class="pue__value">1,15</span></li>
+    <li class="pue__row"><span class="pue__name">Microsoft Azure</span><span class="pue__track"><span class="pue__bar" style="width:28.3%"></span></span><span class="pue__value">1,17</span></li>
+    <li class="pue__row"><span class="pue__name">OVHcloud</span><span class="pue__track"><span class="pue__bar" style="width:40.0%"></span></span><span class="pue__value">1,24</span></li>
+    <li class="pue__row"><span class="pue__name">Scaleway</span><span class="pue__track"><span class="pue__bar" style="width:61.7%"></span></span><span class="pue__value">1,37</span></li>
+    <li class="pue__row pue__row--avg"><span class="pue__name">Moyenne du secteur</span><span class="pue__track"><span class="pue__bar" style="width:90.0%"></span></span><span class="pue__value">1,54</span></li>
+    </ul>
+    <p class="pue__note">La barre montre l'énergie perdue (PUE − 1) : refroidissement, électricité, bâtiment.</p>
   </div>
 </div>
 
-<p class="lead mt-8" v-click="3">Plus un logiciel est utilisé, <span class="mark">plus le choix du langage compte.</span></p>
-
 <div class="source">
-  Source : Cloudflare, <a href="https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet/">« How we built Pingora »</a>, 2022. <a href="https://survey.stackoverflow.co/2025/technology">Stack Overflow Developer Survey 2025</a> (57,9 %). Pereira et al., SLE 2017 (×75,88).
+  Source : RGESN 8.3 à 8.6. PUE déclarés par les hébergeurs, méthodes non harmonisées : Google 2025, AWS 2024, Microsoft 2025, <a href="https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf">OVHcloud FY25</a>, <a href="https://www.scaleway.com/fr/leadership-environnemental/">Scaleway 2024</a>, <a href="https://www.hetzner.com/blog/pue-explained-how-hetzner-achieves-its-value/">Hetzner</a>, Infomaniak (site D4, Genève). Secteur : Uptime Institute. ×40 et ÷5 à 7 : ordres de grandeur, <a href="https://www.electricitymaps.com">Electricity Maps</a>.
 </div>
 
 <!--
-Deux trajectoires opposées, en termes simples.
-- Clic 1 : Rust est sobre, et on l'utilise de plus en plus pour réécrire les logiciels qui tournent énormément.
-  Cloudflare, par où transite une grande partie du web, a réécrit l'un de ses services clés en Rust :
-  70 % de processeur et 67 % de mémoire en moins, sur plus de 1 000 milliards de requêtes par jour.
-  Même l'écosystème Python se fait réécrire ses outils en Rust (uv, 8 à 10 fois plus rapide que pip).
-- Clic 2 : Python n'a jamais été autant utilisé : 57,9 % des développeur·ses (Stack Overflow 2025, +7 points en un an),
-  1er langage sur GitHub depuis 2024. Porté par l'IA et la data. Mais il consomme environ 76 fois l'énergie du C
-  pour la même tâche (Pereira, 75,88).
-  Nuance si question : en IA, les calculs lourds tournent en C ou sur GPU, Python orchestre.
-- Clic 3 : plus un logiciel est utilisé, plus chaque gain se multiplie. Le choix du langage compte d'abord là.
+On a beaucoup parlé du code. Il reste le poste invisible : où tournent les serveurs.
+Trois questions suffisent pour couvrir l'essentiel des critères hébergement du RGESN :
+- Clic 1 : quelle efficacité ? Le PUE.
+- Clic 2 : le classement. Les hyperscalers et Hetzner autour de 1,1, OVHcloud 1,24, Scaleway 1,37, le secteur autour de 1,54. Attention : chiffres déclarés, méthodes non harmonisées, et Infomaniak, c'est un seul site (D4, dont la chaleur chauffe 6 000 logements à Genève).
+- Clic 3 : quelle électricité ? Charbon ~800 gCO2/kWh, hydraulique ~20 : ×40. Demander si c'est une consommation directe ou des certificats (garanties d'origine), la nuance est énorme. Un bon PUE en Allemagne (~350 g) peut émettre plus qu'un PUE moyen en France (~55 g).
+- Clic 4 : quel pays ? France ~55 gCO2/kWh, Allemagne ~350, Pologne ~700. eu-west-3 (Paris) plutôt que us-east-1 (Virginie) : la décision la plus simple et la plus impactante.
+Choisir un hébergeur, c'est choisir son électricité, par procuration.
 -->
 
 ---
@@ -2085,6 +2099,40 @@ Pour aller plus loin : l'atelier « RGESN en action ».
 Tout ce qu'on a vu sur Letterflop vient de là : les chiffres Docker, la pagination, les images, l'accessibilité.
 15 exercices en mob ou pair programming, sur une journée, sans prérequis en numérique responsable.
 Le repo est public : rejouez-le en équipe.
+-->
+
+---
+
+<span class="kicker">Pour aller plus loin / se faire accompagner</span>
+
+# Écoconcevoir <span class="mark">avec son assistant de code</span>
+
+<div class="grid grid-cols-[600px_1fr] gap-10 mt-6 items-start">
+  <div>
+    <p class="promo__pitch">L'<strong>Institut du Numérique Responsable</strong> met les règles du RGESN, du GR491, d'Opquast et du RGAA <strong>dans ton assistant de code</strong> : Claude Code, Codex, Mistral Vibe…</p>
+    <a class="promo__link" href="https://institutnr.org/ecoconcevoir-avec-un-assistant-de-code">institutnr.org/ecoconcevoir-avec-un-assistant-de-code</a>
+  </div>
+  <div class="box">
+    <ol class="promo__facts">
+      <li><strong>Cibler</strong> les règles utiles au projet</li>
+      <li>Les <strong>appliquer</strong> pendant l'écriture</li>
+      <li><strong>Vérifier</strong> avec un audit local</li>
+      <li><strong>Rendre compte</strong>, sources à l'appui</li>
+    </ol>
+  </div>
+</div>
+
+<p class="lead mt-6">Pour apprendre en faisant, ou pré-auditer un projet.<br/><span class="mark">Un accompagnement, pas une certification.</span></p>
+
+<div class="source">
+  Source : <a href="https://institutnr.org/ecoconcevoir-avec-un-assistant-de-code">Institut du Numérique Responsable, Labo NR, « Écoconcevoir avec un assistant de code »</a>. Outils libres, skill-nr sous licence CC BY-SA 4.0.
+</div>
+
+<!--
+Pour se faire accompagner, dans ses apprentissages comme dans un audit : l'INR publie des outils libres pour les assistants de code.
+skill-nr rassemble les règles du RGESN, du GR491, d'Opquast et du RGAA, avec des déclinaisons poussées : Green Claude, Green Codex, Green Vibe.
+La méthode en 4 temps : cibler, appliquer, vérifier par un audit local, rendre compte avec les sources.
+Leur propre mise en garde : aucun de ces outils ne certifie la conformité. Ça accompagne, ça ne remplace pas la mesure.
 -->
 
 ---
