@@ -29,18 +29,25 @@ En ligne : **https://ythirion.github.io/journee-econception2027/**
 
 Les slides sont construites avec [Slidev](https://sli.dev) et un thème local (`slides/theme`).
 
+Le deck est découpé en un fichier par partie, importés dans l'ordre par `slides/slides.md` (frontmatter global et couverture) :
+
+| Fichier | Partie |
+|---|---|
+| `slides/slides/01-ouverture.md` | Qui suis-je, le constat (EcoIndex de YouTube, empreinte du numérique) |
+| `slides/slides/02-du-craft-au-green-craft.md` | Du Software Craftsmanship au manifeste Green Craft |
+| `slides/slides/03-fil-rouge-letterflop.md` | Le fil rouge Letterflop |
+| `slides/slides/04-valeur-01-partenariats.md` | Valeur 01 : des partenariats conscients de leur impact |
+| `slides/slides/05-valeur-02-logiciels-sobres.md` | Valeur 02 : des logiciels sobres et durables (architecture, Letterflop, langages, hébergement) |
+| `slides/slides/06-valeur-03-ressources.md` | Valeur 03 : de la valeur respectueuse des ressources |
+| `slides/slides/07-valeur-04-communaute.md` | Valeur 04 : une communauté dédiée à un numérique soutenable |
+| `slides/slides/08-cloture.md` | Checklist, pour aller plus loin, conclusion |
+
 ```bash
 cd slides
 npm install
 npm run dev     # http://localhost:3030
 npm run build   # build statique dans dist/
 npm run export  # export en PDF
-```
-
-Le PDF proposé au téléchargement sur la version en ligne est généré en local, puis commité, pour garder un build rapide. À relancer après chaque modification des slides :
-
-```bash
-npx slidev export --output public/green-craft-journee-econception-2027.pdf
 ```
 
 ## Licence
